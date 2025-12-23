@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =5
+let g:netrw_dirhist_5='/home/olivier/Projects/Olivier/FBC++/part2/set2/set2-draft-rated(1)/16'
+let g:netrw_dirhist_4='/home/olivier/Projects/Olivier/FBC++/part2/set2/set2-draft-rated(1)'
+let g:netrw_dirhist_3='/home/olivier/Projects/Olivier/FBC++/part2/set2'
+let g:netrw_dirhist_2='/home/olivier/Projects/Olivier/FBC++/part2/set2/16'
+let g:netrw_dirhist_1='/home/olivier/Projects/Olivier/FBC++/part2/set2'
+let g:netrw_dirhist_0='/home/olivier/Projects/Olivier/FBC++/part2'
+let g:netrw_dirhist_9='/home/olivier/Projects/Olivier/FBC++/part2/set3'
+let g:netrw_dirhist_8='/home/olivier/Projects/Olivier/FBC++/part2/set2/set2-draft-rated(1)/14/tempfile'
+let g:netrw_dirhist_7='/home/olivier/Projects/Olivier/FBC++/part2/set2/set2-draft-rated(1)/14'
+let g:netrw_dirhist_6='/home/olivier/Projects/Olivier/FBC++/part2/set2/set2-draft-rated(1)'
