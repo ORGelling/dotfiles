@@ -1,0 +1,173 @@
+!URxvt*font: xft:monospace:size=10
+!URxvt*scrollBar: false
+URxvt*saveLines: 10000
+!URxvt*geometry: 80x24
+!URxvt*foreground: #d8dee9
+!URxvt*background: #2e3440
+!URxvt*perl-ext-common: default,clipboard,url-select
+!URxvt*iso14755: false
+!URxvt*iso14755_52: false
+
+URxvt.transparent: true
+URxvt.shading: 20
+
+!! Scroll with Shift+PageUp/PageDown
+!URxvt.keysym.Shift-Page_Up:      scroll-backward
+!URxvt.keysym.Shift-Page_Down:    scroll-forward
+!
+!! Mouse wheel scrolling
+!URxvt*scrollTtyOutput: false
+!URxvt*scrollWithBuffer: true
+!
+!! Clipboard: copy/paste with Ctrl+Shift+C/V
+!URxvt.keysym.C-S-c: perl:clipboard:copy
+!URxvt.keysym.C-S-v: perl:clipboard:paste
+!
+!! Allow middle-click paste (primary selection)
+!URxvt.perl-ext: clipboard
+
+
+! --- Font (customize as needed) ---
+!URxvt.font: xft:DejaVu Sans Mono:size=9
+URxvt.font: xft:DejaVu Sans Mono:size=10
+! URxvt.font: xft:Roboto Mono:style=Thin:size=10
+! URxvt.font: xft:Iosevka Term:size=10
+! URxvt.font: xft:JetBrains Mono:size=10
+! font-variant: condensed
+URxvt.letterSpace: 0 
+! --- Background and foreground ---
+URxvt.background: #1a2233
+! URxvt.foreground: #b9eaff
+URxvt.cursorColor:  #4cc3ff
+URxvt.foreground: #A0D9FF
+!#B3E9FF
+!#034E2E 
+!#20FDE8
+
+! --- Muted neon blue color palette ---
+URxvt.color0:  #1a2233
+URxvt.color1:  #3e4d5c
+URxvt.color2:  #29e7e7
+URxvt.color3:  #61dafb
+URxvt.color4:  #4cc3ff
+URxvt.color5:  #5b9cff
+URxvt.color6:  #5fffd9
+URxvt.color7:  #b9eaff
+
+! --- Bright colors ---
+URxvt.color8:  #263248
+URxvt.color9:  #4f6272
+URxvt.color10: #36ffe7
+URxvt.color11: #a7dfff
+URxvt.color12: #4cc3ff
+URxvt.color13: #5b9cff
+URxvt.color14: #5fffd9
+URxvt.color15: #eaffff
+
+! --- Optional: Hide scrollbar for minimal look ---
+URxvt.scrollBar: false
+
+! --- Optional: Fade out text thats not selected ---
+URxvt.fading: 20
+URxvt.fadeColor: #1a2233
+
+! My colours:
+! #00FDE8 main light blue
+! #34E2E2 light blue
+! 
+! #2E3436 dark
+! #555753 grey
+! 
+! #824DA9 deep purple
+! #7C6CB3 faded purple
+! #AD7FA8 faded purple grey
+! 
+! #7C6CB3 faded purple 2
+! #AD7FA8 faded amethyst
+! 
+! #9C1747 deep red
+! #F24474 salmon pink
+! 
+! #729FCF faded blue
+! #3465A4 darker faded blue
+! #06989A mellow dark green
+! 
+! #FE7735 orange
+! #29BF5F faded green
+!
+!! --- URxvt Font ---
+!URxvt.font: xft:DejaVu Sans Mono:size=12
+!
+!! --- Dark, semi-transparent background ---
+!URxvt.background: [95]#1a1a24
+!URxvt.foreground: #d7dae0
+!URxvt.cursorColor: #7bc4ff
+!
+!! --- Muted color palette (nice for dark backgrounds) ---
+!URxvt.color0:  #22232f
+!URxvt.color1:  #ff5c57
+!URxvt.color2:  #5af78e
+!URxvt.color3:  #f3f99d
+!URxvt.color4:  #57c7ff
+!URxvt.color5:  #ff6ac1
+!URxvt.color6:  #9aedfe
+!URxvt.color7:  #f1f1f0
+!!
+!URxvt.color8:  #686868
+!URxvt.color9:  #ff5c57
+!URxvt.color10: #5af78e
+!URxvt.color11: #f3f99d
+!URxvt.color12: #57c7ff
+!URxvt.color13: #ff6ac1
+!URxvt.color14: #9aedfe
+!URxvt.color15: #f1f1f0
+!
+!! --- Remove scrollbar for a cleaner look ---
+!URxvt.scrollBar: false
+!
+!! --- Cursor ---
+!URxvt.cursorBlink: true
+!
+!! --- Fading (optional, for unfocused windows) ---
+!URxvt.fading: 15
+!URxvt.fadeColor: #1a1a24
+!
+!! -- Background and Foreground --
+!URxvt.background: [93]#2E3436
+!URxvt.foreground: #00FDE8
+!URxvt.cursorColor: #34E2E2
+!
+!! -- Black (background), BrightBlack (grey)
+!URxvt.color0:  #2E3436   ! black (dark bg)
+!URxvt.color8:  #555753   ! bright black (grey)
+!
+!! -- Red, BrightRed
+!URxvt.color1:  #9C1747   ! red (deep red)
+!URxvt.color9:  #F24474   ! bright red (salmon pink)
+!
+!! -- Green, BrightGreen
+!URxvt.color2:  #06989A   ! green (mellow dark green)
+!URxvt.color10: #29BF5F   ! bright green (faded green)
+!
+!! -- Yellow, BrightYellow
+!URxvt.color3:  #FE7735   ! yellow (orange)
+!URxvt.color11: #AD7FA8   ! bright yellow (faded amethyst)
+!
+!! -- Blue, BrightBlue
+!URxvt.color4:  #00FDE8   ! blue (main light blue)
+!URxvt.color12: #34E2E2   ! bright blue (light blue)
+!
+!! -- Magenta, BrightMagenta
+!URxvt.color5:  #824DA9   ! magenta (deep purple)
+!URxvt.color13: #7C6CB3   ! bright magenta (faded purple)
+!
+!! -- Cyan, BrightCyan
+!URxvt.color6:  #729FCF   ! cyan (faded blue)
+!URxvt.color14: #3465A4   ! bright cyan (darker faded blue)
+!
+!! -- White, BrightWhite
+!URxvt.color7:  #AD7FA8   ! white (faded amethyst/purple grey)
+!URxvt.color15: #F2F2F2   ! bright white (use a standard or slightly tinted white)
+!
+!! -- Optional: scrollbar off for minimal look --
+!URxvt.scrollBar: false
