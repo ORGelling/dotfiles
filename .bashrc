@@ -4,29 +4,45 @@
 #
 # Custom additions:
 #
-export FB=~/Projects/Olivier/FBC++
-export MYLIBS=~/Projects/Olivier/libraries
-export PROG=~/Projects/Olivier/Programs
+eval "$(dircolors -b ~/.dircolors)"
+export FB=~/Projects/FBC-course
+export MYLIBS=~/Projects/libraries
+export PROG=~/Projects/Programs
 export ICMAKE_CPPSTD=--std=c++26
 export LD_LIBRARY_PATH="$HOME/orgutility/lib:$LD_LIBRARY_PATH"
 export PATH=".:$PATH"
+export PATH=$PATH:/usr/sbin
 #export ORGUTILITY_LIB=~/orgutility/lib
 #export ORGUTILITY_INCLUDE=~/orgutility/include
-export TERMINAL=urxvt
+#export TERMINAL=urxvt
 export EDITOR=vim
 #
-alias fbc='cd ~/Projects/Olivier/FBC++/'
+alias fbc='cd ~/Projects/FBC-course/'
 #
 #   Makefile copy and symlink functions
 #
+FBC() {
+    base="/home/olivier/Projects/FBC-course"
+    part=""; set=""; ex=""
+
+    if [[ -n "$1" ]]; then part="part$1"; fi
+    if [[ -n "$2" ]]; then set="set$2"; fi
+    if [[ -n "$3" ]]; then ex="$3"; fi
+
+    path="$base"
+    if [[ -n "$part" ]]; then path="$path/$part"; fi
+    if [[ -n "$set" ]]; then path="$path/$set"; fi
+    if [[ -n "$ex" ]]; then path="$path/$ex"; fi
+
+    cd "$path"
+}
 makelink() {
-    ln -sf /home/olivier/Projects/Olivier/FBC++/utilities/Makefiles/Makefile ./Makefile
-    echo "Created symlink to ~/Projects/Olivier/FBC++/utilities/Makefiles/Makefile"
+    ln -sf /home/olivier/Projects/FBC-course/utilities/Makefiles/Makefile ./Makefile
 }
 #
 makelinkr() 
 {
-    target="/home/olivier/Projects/Olivier/FBC++/utilities/Makefiles/Makefile"
+    target="/home/olivier/Projects/FBC-course/utilities/Makefiles/Makefile"
     linkname="${1:-$(basename "$target")}"
     # Compute relative path from link location to target
     relpath=$(realpath --relative-to="$PWD" "$target")
@@ -34,13 +50,11 @@ makelinkr()
 }
 #
 icmakelink() {
-    ln -sf /home/olivier/Projects/Olivier/FBC++/utilities/icmconf ./icmconf
-    echo "Created symlink to ~/Projects/Olivier/FBC++/utilities/icmconf"
+    ln -sf /home/olivier/Projects/FBC-course/utilities/icmconf ./icmconf
 }
 #
 icmcopy() {
-    cp /home/olivier/Projects/Olivier/FBC++/utilities/icmconf .
-    echo "Local copy created of ~/Projects/Olivier/FBC++/utilities/icmconf"
+    cp /home/olivier/Projects//FBC-course/utilities/icmconf .
 }
 #
 #

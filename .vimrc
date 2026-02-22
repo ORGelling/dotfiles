@@ -17,11 +17,11 @@ filetype on
 "inoremap [ []<Left>
 "inoremap ( ()<Left>
 
-call plug#begin('~/.vim/plugged')
-Plug 'jiangmiao/auto-pairs'
+"call plug#begin('~/.vim/plugged')
+"Plug 'jiangmiao/auto-pairs'
 "Plug 'bronson/vim-wheelmove'
 "Plug 'kana/vim-smartinput'
-call plug#end()
+"call plug#end()
 
 set autoindent
 set smartindent
@@ -53,6 +53,8 @@ endfunction
 inoremap <CR> x<BS><CR>x<BS>
 nnoremap o ox<BS>
 nnoremap O Ox<BS>
+
+nnoremap - :update<bar>Explore<CR>
 
 set textwidth=78 colorcolumn=79
 
