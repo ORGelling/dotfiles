@@ -18,6 +18,7 @@ export PATH=$PATH:/usr/sbin
 export EDITOR=vim
 #
 alias fbc='cd ~/Projects/FBC-course/'
+alias kubectl="minikube kubectl -- "
 #
 #   Makefile copy and symlink functions
 #
